@@ -1,6 +1,8 @@
 /* Design System: Pendopo & Peta Kota — post-review refinement: scannable route bands, repeated civic-map cues, and stronger documentary evidence. */
 main .arrival-section {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 8vw, 9rem);
   position: relative;
   background-color: #fbf9f4;
   background-image: url("/generated/pandeglang-compass-ribbon.png");
@@ -57,8 +59,9 @@ main .arrival-route article {
 main .arrival-route article:nth-child(2n) { border-top-color: var(--clay); }
 main .arrival-route article > span { position: absolute; top: 1.6rem; left: 1.2rem; color: var(--clay); }
 main .arrival-route article:nth-child(2n) > span { color: var(--green); }
-main .arrival-route article h3 { max-width: 22ch; font-size: clamp(1.45rem, 2.2vw, 2rem); }
-main .arrival-route article p { max-width: 55ch; font-size: .86rem; line-height: 1.82; }
+main .arrival-route article h3 { margin: 0 0 .75rem; max-width: 22ch; font-size: clamp(1.45rem, 2.2vw, 2rem); line-height: 1.25; }
+main .arrival-route article p { margin: 0 0 .75rem; max-width: 55ch; font-size: .86rem; line-height: 1.82; color: var(--ink-soft); }
+main .arrival-route article a { display: inline-block; margin-top: .25rem; color: var(--green); font-size: .72rem; font-weight: 800; text-decoration: underline; }
 
 main .story-section { position: relative; border-top: 1px solid rgba(36,92,69,.25); }
 main .story-photo img { min-height: 31rem; }
@@ -85,6 +88,10 @@ main .evidence-section::before { background: #fff6e7; }
 main .essentials-grid article { border-top: 1px solid rgba(240,192,126,.5); }
 main .field-grid article { border-top: 3px solid var(--green); }
 main .field-grid article:nth-child(2n) { border-top-color: var(--clay); }
+
+@media (max-width: 980px) {
+  main .arrival-section { grid-template-columns: 1fr; }
+}
 
 @media (max-width: 880px) {
   main .arrival-heading { grid-template-columns: 1fr; gap: 1rem; }
