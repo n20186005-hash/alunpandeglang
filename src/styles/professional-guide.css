@@ -1,0 +1,100 @@
+/* Design System: Pendopo & Peta Kota — post-review refinement: scannable route bands, repeated civic-map cues, and stronger documentary evidence. */
+main .arrival-section {
+  display: block;
+  position: relative;
+  background-color: #fbf9f4;
+  background-image: url("/manus-storage/pandeglang-compass-ribbon_f1ddf516.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - clamp(1.25rem, 5vw, 5rem)) 3rem;
+  background-size: min(22rem, 35vw);
+}
+
+main .arrival-heading {
+  display: grid;
+  grid-template-columns: minmax(16rem, .72fr) minmax(0, 1.28fr);
+  gap: clamp(2rem, 8vw, 9rem);
+  max-width: 70rem;
+  padding-top: .95rem;
+  border-top: 2px solid var(--green);
+}
+
+main .arrival-heading::before {
+  position: absolute;
+  top: 0;
+  left: clamp(1.25rem, 5vw, 5rem);
+  width: 5rem;
+  height: .9rem;
+  content: "";
+  background: var(--clay);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+main .arrival-heading .eyebrow { grid-column: 1; }
+main .arrival-heading .section-title { grid-column: 1; grid-row: 2; max-width: 10ch; }
+main .arrival-heading .section-intro { grid-column: 2; grid-row: 1 / span 2; align-self: end; max-width: 60ch; margin: 0; padding-bottom: .5rem; }
+
+main .arrival-route {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  max-width: 76rem;
+  margin-top: 3.2rem;
+  border-top: 0;
+}
+
+main .arrival-route article {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 15rem;
+  padding: 1.55rem 1.25rem 1.35rem 3.5rem;
+  border: 0;
+  border-top: 4px solid var(--green);
+  background: rgba(244, 240, 230, .78);
+  box-shadow: inset 0 0 0 1px rgba(24,35,30,.09);
+}
+
+main .arrival-route article:nth-child(2n) { border-top-color: var(--clay); }
+main .arrival-route article > span { position: absolute; top: 1.6rem; left: 1.2rem; color: var(--clay); }
+main .arrival-route article:nth-child(2n) > span { color: var(--green); }
+main .arrival-route article h3 { max-width: 22ch; font-size: clamp(1.45rem, 2.2vw, 2rem); }
+main .arrival-route article p { max-width: 55ch; font-size: .86rem; line-height: 1.82; }
+
+main .story-section { position: relative; border-top: 1px solid rgba(36,92,69,.25); }
+main .story-photo img { min-height: 31rem; }
+main .story-photo figcaption { border-left: 2px solid var(--clay); padding-left: .7rem; }
+
+main .origin-section,
+main .field-notes,
+main .evidence-section { position: relative; }
+
+main .origin-section::before,
+main .field-notes::before,
+main .evidence-section::before {
+  position: absolute;
+  top: 0;
+  left: clamp(1.25rem, 5vw, 5rem);
+  width: 7rem;
+  height: .75rem;
+  content: "";
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: var(--green);
+}
+
+main .evidence-section::before { background: #fff6e7; }
+main .essentials-grid article { border-top: 1px solid rgba(240,192,126,.5); }
+main .field-grid article { border-top: 3px solid var(--green); }
+main .field-grid article:nth-child(2n) { border-top-color: var(--clay); }
+
+@media (max-width: 880px) {
+  main .arrival-heading { grid-template-columns: 1fr; gap: 1rem; }
+  main .arrival-heading .eyebrow, main .arrival-heading .section-title, main .arrival-heading .section-intro { grid-column: auto; grid-row: auto; }
+  main .arrival-heading .section-intro { max-width: 60ch; }
+  main .arrival-route { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px) {
+  main .arrival-section { background-position: calc(100% - 1.25rem) 2rem; background-size: 11rem; }
+  main .arrival-route article { min-height: auto; padding-left: 3.1rem; }
+  main .story-photo img { min-height: 23rem; }
+}

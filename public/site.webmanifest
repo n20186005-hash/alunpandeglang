@@ -1,0 +1,13 @@
+{
+  "name": "Panduan Alun-Alun Pandeglang",
+  "short_name": "Alun-Alun PDG",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F0E6",
+  "theme_color": "#245C45",
+  "icons": [
+    { "src": "/favicon-16.svg", "sizes": "16x16", "type": "image/svg+xml" },
+    { "src": "/favicon-32.svg", "sizes": "32x32", "type": "image/svg+xml" },
+    { "src": "/apple-touch-icon.svg", "sizes": "180x180", "type": "image/svg+xml" }
+  ]
+}

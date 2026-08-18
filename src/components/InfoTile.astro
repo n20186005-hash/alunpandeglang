@@ -1,0 +1,7 @@
+---
+// Design System: Pendopo & Peta Kota — practical guidance blocks with architectural, not app-card, geometry.
+interface Props { label: string; title: string; body: string; accent?: "green" | "clay"; }
+const { label, title, body, accent = "green" } = Astro.props;
+---
+<article class:list={["info-tile", accent]}><p class="label">{label}</p><h3>{title}</h3><p>{body}</p></article>
+<style>/* Design System: Pendopo & Peta Kota — offset top rule creates field-note rhythm. */.info-tile{min-height:100%;border-top:3px solid #245c45;padding:1.25rem 1.1rem 1.2rem;background:rgba(255,255,255,.46);transition:transform 180ms var(--ease-out),background 180ms var(--ease-out)}.info-tile.clay{border-color:#a95d3c}.info-tile:hover{background:#fffdf8;transform:translateY(-3px)}.label{margin-bottom:1.5rem;color:#245c45;font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.clay .label{color:#a95d3c}h3{font-size:1.45rem}.info-tile>p:last-child{margin-top:.7rem;color:#4e5b53;font-size:.83rem;line-height:1.75}</style>
