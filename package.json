@@ -1,0 +1,11 @@
+{
+  "name": "alun-alun-pandeglang-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Panduan pengunjung nirlaba untuk Alun-Alun Pandeglang.",
+  "packageManager": "pnpm@11.22.0",
+  "engines": { "node": "22.13.0", "pnpm": "11.22.0" },
+  "scripts": { "dev": "astro dev --host 0.0.0.0 --port 3000", "build": "astro build", "check": "astro check", "preview": "astro preview --host 0.0.0.0", "deploy": "npx --yes wrangler@4.123.0 deploy" },
+  "devDependencies": { "@astrojs/check": "0.9.10", "@astrojs/compiler-binding-linux-x64-gnu": "0.3.2", "@astrojs/sitemap": "3.7.3", "@rolldown/binding-linux-x64-gnu": "1.2.4", "@tailwindcss/oxide-linux-x64-gnu": "4.3.3", "@tailwindcss/vite": "4.3.3", "astro": "7.2.2", "lightningcss-linux-x64-gnu": "1.32.0", "tailwindcss": "4.3.3", "typescript": "6.0.3" }
+}
