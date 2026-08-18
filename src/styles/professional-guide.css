@@ -3,7 +3,7 @@ main .arrival-section {
   display: block;
   position: relative;
   background-color: #fbf9f4;
-  background-image: url("/manus-storage/pandeglang-compass-ribbon_f1ddf516.png");
+  background-image: url("/generated/pandeglang-compass-ribbon.png");
   background-repeat: no-repeat;
   background-position: calc(100% - clamp(1.25rem, 5vw, 5rem)) 3rem;
   background-size: min(22rem, 35vw);
