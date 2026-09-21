@@ -3,6 +3,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
+import { SITE_NAME } from "../data/site";
 
 interface Props { lang: "id" | "en"; }
 const { lang } = Astro.props;
@@ -32,7 +33,7 @@ const attractionJsonLd = {
 };
 const faqJsonLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) };
 ---
-<BaseLayout lang={lang} pathname={path} title={t("Alun-Alun Pandeglang — Panduan Pengunjung", "Alun-Alun Pandeglang — Visitor Guide")} description={t("Panduan nirlaba yang berisi konteks, akses, fasilitas, dan persiapan kunjungan ke Alun-Alun Pandeglang.", "A non-profit guide to context, access, facilities and visit planning for Alun-Alun Pandeglang.")}>
+<BaseLayout lang={lang} pathname={path} title={SITE_NAME[lang]} description={t("Ruang terbuka publik di pusat Pandeglang, Banten. Lihat lokasi, foto suasana, akses, parkir, kuliner sekitar, dan tips kunjungan singkat dalam satu panduan nirlaba.", "The public town square in Pandeglang, Banten, Indonesia. Find location, photos, access, parking, nearby food and short-visit tips in one independent guide.")}>
   <Fragment slot="head"><script is:inline type="application/ld+json" set:html={JSON.stringify([attractionJsonLd, faqJsonLd])}></script><link rel="alternate" hreflang={en ? "id" : "en"} href={en ? "/" : "/en/"} /></Fragment>
   <div class="site-shell">
     <Header />
