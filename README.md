@@ -1,33 +1,9 @@
-# Panduan Alun-Alun Pandeglang
+# Alun-Alun Pandeglang visitor guide
 
-Proyek ini adalah situs statis **Astro + Tailwind CSS + TypeScript** untuk panduan pengunjung independen dan nirlaba. Seluruh konten halaman publik berbahasa Indonesia.
+Independent Indonesian and English guide built with Astro, Tailwind and TypeScript. Use the versions in `package.json`; install with the committed lockfile, then run `pnpm check`, `pnpm build` and `pnpm exec wrangler deploy --dry-run`.
 
-## Pengembangan lokal
+`astro.config.mjs` defaults to `https://alunpandeglang.com`; `SITE_URL` can override the absolute deployment origin. Legal pages pair corresponding topics across languages. FAQs use a shared visible/schema array. A Worker runs before ASSETS, preserving path/query in HTTP/www redirects and serving unknown paths as noindex 404.
 
-Gunakan Node.js `22.13.0` dan pnpm `11.22.0`, sebagaimana dikunci dalam `.node-version`, `engines`, dan `packageManager`.
+Dated public sources and editorial limitations are recorded in `research-notes.md`. Decorative WebP illustrations are project assets, not documentary photographs of current conditions. Build output is reproducible from `src/` and `public/`.
 
-```bash
-corepack pnpm install --frozen-lockfile
-pnpm check
-pnpm build
-```
-
-## Konfigurasi domain
-
-Satu-satunya lokasi untuk domain produksi adalah variabel `SITE_URL` yang dibaca oleh field `site` di `astro.config.mjs`. Isi `SITE_URL` saat domain telah tersedia. Bila kosong, proyek tetap dapat dibangun: canonical dan Open Graph absolut tidak diterbitkan, sedangkan integrasi sitemap tidak dijalankan.
-
-## Cloudflare Workers Static Assets
-
-Setelah build, jalankan `pnpm deploy`. Skrip ini memanggil Wrangler `4.123.0` secara eksplisit dan konfigurasi `wrangler.jsonc` menggunakan `assets.directory: "./dist"`; tidak ada parameter `--assets` tersembunyi. Proyek ini memakai **Workers Static Assets**, bukan Pages CI, sehingga tidak menyalin konfigurasi ke `dist/client/` dan tidak membuat penunjuk `dist/client/wrangler.json`.
-
-## Pemeriksaan bersih
-
-Untuk pemeriksaan instalasi dari awal, hapus `node_modules`, lalu jalankan:
-
-```bash
-CI=1 corepack pnpm install --frozen-lockfile
-pnpm check
-pnpm build
-```
-
-`pnpm-workspace.yaml` sengaja tidak dibuat karena proyek ini adalah paket tunggal.
+Keep private reports, credentials, local runtime state and dependency caches outside the published tree. Local checks and dry-runs do not establish production deployment or visual acceptance.

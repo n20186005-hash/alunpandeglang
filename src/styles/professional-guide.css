@@ -5,7 +5,7 @@ main .arrival-section {
   gap: clamp(2rem, 8vw, 9rem);
   position: relative;
   background-color: #fbf9f4;
-  background-image: url("/generated/pandeglang-compass-ribbon.png");
+  background-image: url("/generated/pandeglang-compass-ribbon.webp");
   background-repeat: no-repeat;
   background-position: calc(100% - clamp(1.25rem, 5vw, 5rem)) 3rem;
   background-size: min(22rem, 35vw);

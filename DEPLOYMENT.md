@@ -1,13 +1,5 @@
-# Catatan Cloudflare Workers
+# Cloudflare Worker deployment
 
-Konfigurasi proyek ini dibuat untuk mode **Workers Static Assets**.
+The Worker entrypoint is `src/worker.ts`. Assets are bound as `ASSETS`, served from `dist`, with `run_worker_first: true` and `not_found_handling: 404-page`. HTTP and www requests normalize to HTTPS apex with their path/query preserved. Unknown paths retain 404 and an X-Robots-Tag noindex header.
 
-| Area pemeriksaan | Implementasi proyek |
-| --- | --- |
-| Konfigurasi Wrangler | `wrangler.jsonc` berisi `name`, `compatibility_date`, dan `assets.directory`. |
-| Sumber deploy | Direktori aset adalah `./dist`, relatif terhadap `wrangler.jsonc` di akar proyek. |
-| Skrip CI/deploy | `pnpm deploy` menjalankan `npx --yes wrangler@4.123.0 deploy` tanpa argumen aset tambahan. |
-| Pages CI | Tidak digunakan. Tidak ada konfigurasi yang disalin ke `dist/client/`, sehingga tidak ada risiko path menjadi `dist/client/dist/client`. |
-| JSONC | Konfigurasi deploy memakai JSON tanpa komentar atau trailing comma. |
-
-Jika platform menjalankan `wrangler deploy` secara langsung, hasilnya setara dengan skrip `pnpm deploy` karena seluruh konfigurasi penting berada di `wrangler.jsonc`.
+Run the repository check and build, then a Wrangler dry-run. Before publishing, verify the actual project identity and production domain mapping independently. After publishing, confirm final-domain pages, assets, redirects, 404 and actual mobile layout. A local build is not evidence of a released production version.

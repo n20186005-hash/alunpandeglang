@@ -1,27 +1,12 @@
-# Catatan Riset · Alun-Alun Pandeglang
+# Public source notes — Alun-Alun Pandeglang
 
-## Identitas Lokasi
+Checked 19 October 2026.
 
-- Nama yang dipakai di situs: **Alun-Alun Pandeglang**.
-- Alamat kerja berdasarkan tautan peta pengguna: Jl. KH. Abdul Halim, Pandeglang, Kec. Pandeglang, Kabupaten Pandeglang, Banten 42211, Indonesia.
-- Koordinat yang digunakan untuk konteks peta: **-6.3097349, 106.1039660** (dari tautan semat Google Maps yang disediakan pengguna).
+- [Google Maps](https://maps.app.goo.gl/pJAYMC46WkNCCuYm6): Jl. KH. Abdul Halim, Pandeglang, Banten 42211; pin -6.3097349,106.1065409; 4.4/5 from 8,624 reviews; all seven days list 24-hour opening. Dated third-party snapshot, not a guarantee of night access, facilities or events. No phone is verified. A listing linking to this independent guide does not establish official operator status.
+- [Regional Secretariat, 17 August 2026](https://setda.pandeglangkab.go.id/posts/hut-ke-81-ri-jadi-momentum-percepatan-pembangunan-pandeglang-infrastruktur-dan-pendidikan-jadi-prioritas): Independence Day ceremony at the square. A historical event, not a recurring performance schedule.
+- [Health Office, 31 March 2026](https://dinkes.pandeglangkab.go.id/posts/sambutan-hari-jadi-ke-152-pandeglang-dinas-kesehatan-gelar-bakti-sosial-kesehatan-dan-sunatan-masal): anniversary activity at the square. Not evidence of daily health services.
+- [Regency profile](https://ppid.pandeglangkab.go.id/home/profilpemkab): local administrative and provincial context.
 
-## Temuan yang Dapat Dipakai
+Entrance fees, parking charges, active transport routes, toilet/accessibility conditions and current facilities are unverified. They are presented as questions to confirm, not guarantees. No opening-hours, free-access, rating or event schema is emitted from a third-party listing.
 
-- Situs Pemerintah Kabupaten Pandeglang menerbitkan dokumentasi acara publik yang diadakan di Alun-Alun Pandeglang pada 9 April 2025. Ini mendukung deskripsi tempat sebagai ruang terbuka publik dan lokasi kegiatan warga; tidak mendukung klaim mengenai pengelola, jam buka resmi, atau fasilitas tertentu.
-- Hasil pencarian pemerintah daerah juga memperlihatkan dokumentasi upacara, festival, dan kegiatan peringatan di alun-alun. Copy situs perlu memakai bahasa berhati-hati: “sering digunakan” atau “dapat menjadi lokasi kegiatan”, bukan janji jadwal tetap.
-- Untuk biaya, jam buka, parkir, toilet, dan kondisi kegiatan, tidak tersedia sumber resmi tunggal yang konsisten dalam riset awal. Situs akan menampilkan “perlu dikonfirmasi di lokasi” dan menghindari angka/komitmen yang dibuat-buat.
-
-## Sumber yang Dirujuk di Situs
-
-1. Pemerintah Kabupaten Pandeglang, “Bupati dan Wakil Bupati Pandeglang menghadiri acara Road To Masyaikh bersolawat di Alun-alun Pandeglang”, 9 April 2025: https://pandeglangkab.go.id/posts/bupati-dan-wakil-bupati-pandeglang-menghadiri-acara-road-to-masyaikh-bersolawat-di-alun-alun-pandeglang
-2. Pemerintah Kabupaten Pandeglang, laman resmi berita dan informasi: https://pandeglangkab.go.id/
-3. Dinas Pariwisata Provinsi Banten, arsip Calendar of Events: https://dispar.bantenprov.go.id/storage/dispar/lama/upload/article-pdf/Banten_Calendar_Events_2018_REVISI_FINAL-min.pdf
-4. Wonderful Indonesia, informasi tujuan Banten: https://www.indonesia.travel/
-5. Google Maps, tautan lokasi yang disediakan pengguna: https://maps.app.goo.gl/pJAYMC46WkNCCuYm6
-
-## Batas Editorial
-
-- Tidak menyebut bisnis tertentu maupun menyarankan pedagang tertentu.
-- Tidak menciptakan ulasan, rating, biaya tiket, jam operasional, atau tanggal pembaruan yang tidak dapat diverifikasi.
-- Foto lapangan yang dipakai diperlakukan sebagai dokumentasi visual; hak cipta tetap berada pada fotografer/pemegang hak.
+Five project-made decorative illustrations are optimized locally as WebP; see `ASSET_MANIFEST.md`. Earlier photographs lacking traceable photographer/permission information were removed. Historic images of different places are not substituted as current documentary evidence.
